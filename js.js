@@ -1,4 +1,30 @@
 propaganda = ["clinton.gif",  "waving.gif", "waving-flag.gif"] //, "reagan.jpg", "portrait.jpg"];
+colors = ["red", "white", "navy"];
+words = "Ronald Reagan, American Cheese, America, McDonald's, Bald Eagles, Stephen Colbert, Guns, Second Amendment, Civil Rights,"+
+"Country Music, Jazz, Not Rob Ford, George Washington, 2-Ply Toilet Paper, Obesity, Kobe Bryant, Kanye West, Bernie Madoff, The Star Spangled Banner,"+
+"Freedom, Liberty, Values, Monogamy, Prison-Industrial Complex, Mountains, Plains, Railroads,Capitalism,Nature,National Parks,"+
+"Theodore Roosevelt,Independence,Independence Day,Cowboys,Bootstraps,John Wayne,Ellis Island,The Grand Canyon,Football,World Series Champions,"+
+"John Deere,Nascar,Donuts,Norman Rockwell,Thanksgiving,Jesus,Army,Navy,Marines,Air Force,ShamWOW!,The Kardashians,Times Square,Uncle Sam,"+
+"Invading other countries for their oil,Route 66,Yellowstone,Hollywood,Religious Freedom,The First Amendment,Free speech,Right to a Trial by Jury,"+
+"Cadillac,Johnny Cash,The Statue of Liberty,Paul Revere,John Adams,Mount Rushmore,Coca Cola,Baseball,Apple Pie,The Constitution,"+
+"The Moon,America";
+words = words.split(',')
+var mqdiv = document.createElement('span');
+mqdiv.id = 'thisisme';
+for(j=words.length;j>=0;j--){
+	k = Math.floor(Math.random()*j);
+	var usaspan = document.createElement('span');
+	var wrd = words[k];
+	if(wrd){
+		usaspan.innerHTML = wrd.toUpperCase();
+		usaspan.style.color = colors[j%3];
+	}
+	mqdiv.appendChild(usaspan);
+	words.splice(k,1);
+}
+//mqdiv = document.createTextNode("what");
+//console.log(mqdiv.children.length);
+
 function pickElement(lst){
 	picked = lst[Math.floor(Math.random()*lst.length)];
 	return(picked);
@@ -10,9 +36,9 @@ function changeBackground(){
 
 changeBackground();
 
-colors = ["red", "white", "navy"];
 count = 0;
 window.onload = function(){
+	document.getElementById('mymarquee').appendChild(mqdiv);
 	setInterval(function(){
 		cycle = document.getElementById("cycle")
 		for(var i=0;i<cycle.children.length;i++){
