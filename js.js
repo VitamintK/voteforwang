@@ -39,7 +39,11 @@ function changeBackground(){
 }
 
 function dothings(el){
-	changeBackground();
+	if(Math.random() < 0.05){
+		document.body.style.backgroundImage="url(propaganda/reagan.jpg";
+	}else{
+		changeBackground();
+	}
 	lyriccounter++;
 	el.innerHTML = lines[lyriccounter%lines.length];
 }
