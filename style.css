@@ -3,10 +3,26 @@ body{
 	margin-top: 0em;
 	background-image: url("propaganda/portrait.jpg");
 }
+
+img{ 
+    -moz-animation:2s rotateRight infinite linear; 
+    -webkit-animation:2s rotateRight infinite linear; 
+}
+
+@-moz-keyframes rotateRight{
+    0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
+    100%{ -moz-transform:rotate(360deg); }
+}
+
+@-webkit-keyframes rotateRight{
+    0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
+    100%{ -webkit-transform:rotate(360deg); }
+}
+
 .bigcontainer{
 	width: 660px;
 	margin: 0 auto;
-	margin-top:1em;
+	margin-top:1.3em;
 	padding: 1em;
 	background-color: rgba(190,190,190,0.4);
 	/*border: 0.1em solid grey;*/
@@ -33,7 +49,19 @@ body{
 #mymarquee{
 	font-family: Impact, Charcoal, sans-serif;
 }
-#para{
+#marqcon{
+	background-color: rgba(0,0,0,0.2);
+}
+.para{
 	background-color: rgba(255,255,255,0.5);
 	font-size: 1.3em;
 }
+/*
+#whitespace{
+	background-color:white;
+	padding:0;
+	margin-left:0;
+	margin-right:0;
+	height:1em;
+}
+*/

@@ -1,4 +1,4 @@
-propaganda = ["clinton.gif",  "waving.gif", "waving-flag.gif"] //, "reagan.jpg", "portrait.jpg"];
+propaganda = ["clinton.gif", "waving.gif", "favicon.gif"] //, " "waving-flag.gif", reagan.jpg", "portrait.jpg"];
 colors = ["red", "white", "navy"];
 words = "Ronald Reagan, American Cheese, America, McDonald's, Bald Eagles, Stephen Colbert, Guns, Second Amendment, Civil Rights,"+
 "Country Music, Jazz, Not Rob Ford, George Washington, 2-Ply Toilet Paper, Obesity, Kobe Bryant, Kanye West, Bernie Madoff, The Star Spangled Banner,"+
@@ -8,7 +8,7 @@ words = "Ronald Reagan, American Cheese, America, McDonald's, Bald Eagles, Steph
 "Invading other countries for their oil,Route 66,Yellowstone,Hollywood,Religious Freedom,The First Amendment,Free speech,Right to a Trial by Jury,"+
 "Cadillac,Johnny Cash,The Statue of Liberty,Paul Revere,John Adams,Mount Rushmore,Coca Cola,Baseball,Apple Pie,The Constitution,"+
 "The Moon,America,Taylor Swift,Turkeys,Benjamin Franklin,military,Democracy,Trail of Tears,opportunity,immigrants,checks and balances,"+
-"bicameral,High Fructose Corn Syrup,student loan debt,Twain,Poe,E Pluribus Unum,Oak Tree";
+"bicameral congress,High Fructose Corn Syrup,student loan debt,Twain,Poe,E Pluribus Unum,Oak Tree";
 words = words.split(',')
 var mqdiv = document.createElement('span');
 mqdiv.id = 'thisisme';
