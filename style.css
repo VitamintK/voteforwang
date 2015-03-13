@@ -4,9 +4,14 @@ body{
 	background-image: url("propaganda/portrait.jpg");
 }
 
-img{ 
-    -moz-animation:2s rotateRight infinite linear; 
-    -webkit-animation:2s rotateRight infinite linear; 
+.spinning{ 
+    -moz-animation:0.9s rotateRight infinite linear; 
+    -webkit-animation:0.9s rotateRight infinite linear; 
+}
+
+.stopspin{
+	-moz-animation: 2s rotateRight 1 ease;
+	-webkit-animation: 2s rotateRight 1 ease;
 }
 
 @-moz-keyframes rotateRight{

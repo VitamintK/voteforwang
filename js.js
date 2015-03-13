@@ -35,6 +35,14 @@ function changeBackground(){
 	document.body.style.backgroundImage = "url(propaganda/" + pickElement(propaganda) + ")";
 }
 
+function tspin(el){
+	if(el.className == "spinning"){
+		el.className = "stopspin";
+	} else {
+		el.className = "spinning";
+	}
+}
+
 changeBackground();
 
 count = 0;
