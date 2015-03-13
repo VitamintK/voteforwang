@@ -6,6 +6,7 @@ body{
 .bigcontainer{
 	width: 660px;
 	margin: 0 auto;
+	margin-top:1em;
 	padding: 1em;
 	background-color: rgba(190,190,190,0.4);
 	/*border: 0.1em solid grey;*/
@@ -31,4 +32,8 @@ body{
 }
 #mymarquee{
 	font-family: Impact, Charcoal, sans-serif;
+}
+#para{
+	background-color: rgba(255,255,255,0.5);
+	font-size: 1.3em;
 }

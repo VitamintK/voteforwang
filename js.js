@@ -7,7 +7,8 @@ words = "Ronald Reagan, American Cheese, America, McDonald's, Bald Eagles, Steph
 "John Deere,Nascar,Donuts,Norman Rockwell,Thanksgiving,Jesus,Army,Navy,Marines,Air Force,ShamWOW!,The Kardashians,Times Square,Uncle Sam,"+
 "Invading other countries for their oil,Route 66,Yellowstone,Hollywood,Religious Freedom,The First Amendment,Free speech,Right to a Trial by Jury,"+
 "Cadillac,Johnny Cash,The Statue of Liberty,Paul Revere,John Adams,Mount Rushmore,Coca Cola,Baseball,Apple Pie,The Constitution,"+
-"The Moon,America";
+"The Moon,America,Taylor Swift,Turkeys,Benjamin Franklin,military,Democracy,Trail of Tears,opportunity,immigrants,checks and balances,"+
+"bicameral,High Fructose Corn Syrup,student loan debt,Twain,Poe,E Pluribus Unum,Oak Tree";
 words = words.split(',')
 var mqdiv = document.createElement('span');
 mqdiv.id = 'thisisme';
