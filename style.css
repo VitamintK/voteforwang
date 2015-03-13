@@ -77,6 +77,13 @@ body{
   background: #474e52;
   text-decoration: none;
 }
+.foot{
+	padding-top: 3px;
+	background-color: rgba(100,100,100,0.9);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.6em;
+	color: white;
+}
 /*
 #whitespace{
 	background-color:white;

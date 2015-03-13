@@ -26,6 +26,9 @@ for(j=words.length;j>=0;j--){
 //mqdiv = document.createTextNode("what");
 //console.log(mqdiv.children.length);
 
+lines = ["Open My Eyes", "Take Me Wonder by Wonder", "Show Me a Whole New World", "Unbelievable Sights"]
+lyriccounter = 0;
+
 function pickElement(lst){
 	picked = lst[Math.floor(Math.random()*lst.length)];
 	return(picked);
@@ -33,6 +36,12 @@ function pickElement(lst){
 
 function changeBackground(){
 	document.body.style.backgroundImage = "url(propaganda/" + pickElement(propaganda) + ")";
+}
+
+function dothings(el){
+	changeBackground();
+	lyriccounter++;
+	el.innerHTML = lines[lyriccounter%lines.length];
 }
 
 function tspin(el){
