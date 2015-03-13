@@ -2,11 +2,14 @@ body{
 	text-align: center;
 	background-image: url("portrait.jpg");
 	margin: 0 auto;
-	width: 600px;
 }
 .container{
+	margin: 0 auto;
+	margin-top: 2em;
+	width: 600px;
 	font-family: Helvetica, Arial, sans-serif;
+	color: navy;
+	border: 0.3em solid red;
 	background-color: white;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
+	background-color: rgba(255,255,255,0.65);
 }
