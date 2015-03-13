@@ -1,0 +1,12 @@
+body{
+	text-align: center;
+	background-image: url("portrait.jpg");
+	margin: 0 auto;
+	width: 600px;
+}
+.container{
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: white;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
