@@ -61,6 +61,22 @@ body{
 	background-color: rgba(255,255,255,0.5);
 	font-size: 1.3em;
 }
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1em;
+  background: #747678;
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #474e52;
+  text-decoration: none;
+}
 /*
 #whitespace{
 	background-color:white;
