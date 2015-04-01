@@ -1,4 +1,4 @@
-propaganda = ["clinton.gif", "waving.gif", "favicon.gif"] //, " "waving-flag.gif", reagan.jpg", "portrait.jpg"];
+propaganda = ["clinton.gif", "waving.gif"]//, "favicon.gif"] //, " "waving-flag.gif", reagan.jpg", "portrait.jpg"];
 colors = ["red", "white", "navy"];
 words = "Ronald Reagan, American Cheese, America, McDonald's, Bald Eagles, Stephen Colbert, Guns, Second Amendment, Civil Rights,"+
 "Country Music, Jazz, Not Rob Ford, George Washington, 2-Ply Toilet Paper, Obesity, Kobe Bryant, Kanye West, Bernie Madoff, The Star Spangled Banner,"+
@@ -40,8 +40,12 @@ function changeBackground(){
 }
 
 function dothings(el){
-	if(Math.random() < 0.05){
-		document.body.style.backgroundImage="url(propaganda/reagan.jpg";
+	if(Math.random() < 0.1){
+		if(Math.random() < 0.05){
+			document.body.style.backgroundImage="url(propaganda/favicon.gif";
+		}else{
+			document.body.style.backgroundImage="url(propaganda/reagan.jpg";
+		}
 	}else{
 		changeBackground();
 	}
