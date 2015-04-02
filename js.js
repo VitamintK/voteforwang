@@ -54,10 +54,17 @@ function dothings(el){
 }
 
 function tspin(el){
-	if(el.className == "spinning"){
-		el.className = "stopspin";
+	cnames = el.className.split(" ");
+	if(cnames.indexOf("spinning") > -1){
+		cnames.splice(cnames.indexOf("spinning"), 1)
+		el.className = cnames.join(" ") + " stopspin";
 	} else {
-		el.className = "spinning";
+		if(cnames.indexOf("stopspin") > -1){
+			cnames.splice(cnames.indexOf("stopspin"), 1)
+			el.className = cnames.join(" ") + " spinning";
+		} else {
+			el.className += " spinning";
+		}
 	}
 }
 
