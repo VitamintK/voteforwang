@@ -2,6 +2,7 @@ body{
 	text-align: center;
 	margin-top: 0em;
 	background-image: url("propaganda/portrait.jpg");
+	cursor: url('cursor.gif'), default;
 }
 
 .spinning{ 
