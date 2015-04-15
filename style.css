@@ -35,7 +35,10 @@ body{
 }
 .container{
 	margin: 0 auto;
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top:0em;
+	padding-bottom:0em;
 	/*width: 600px;*/
 	font-family: Helvetica, Arial, sans-serif;
 	color: navy;
