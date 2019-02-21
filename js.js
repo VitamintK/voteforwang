@@ -73,6 +73,7 @@ changeBackground();
 count = 0;
 window.onload = function(){
 	document.getElementById('mymarquee').appendChild(mqdiv);
+	document.querySelector('#marqcon > marquee').start();
 	setInterval(function(){
 		cycle = document.getElementById("cycle")
 		for(var i=0;i<cycle.children.length;i++){
